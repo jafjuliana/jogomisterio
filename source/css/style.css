@@ -1,4 +1,24 @@
-@import 'components/general';
-@import 'components/about';
-@import 'components/banner';
-@import 'components/service';
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+h2.title{
+    text-align: center;
+}
+
+#list div{
+    float: left;
+    width: 33%;
+}
+
+#list h3{
+    padding-left: 20px;
+}
+
+#list .listagem{
+    padding-left: 20px;
+}
+
+#list .listagem li{
+    list-style: none;
+}

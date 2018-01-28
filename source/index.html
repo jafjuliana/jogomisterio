@@ -2,32 +2,56 @@
 <html>
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
-    <title>Juliana Assalti - Programadora Front-End</title>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="../source/css/style.css" media="screen">
+  <script type="text/javascript" src="../source/js/libs/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../source/js/main.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <title>Juliana Assalti - Jogo do Mistério</title>
 </head>
 
 <body>
-    <div class="container-full" id="container-full">
+  <h2 class="title">Jogo do Mistério</h2>
 
-      <section class="banner" id="row">
-        <h3>Banner</h3>
-      </section>
+  <div id="list">
+    <div class="criminosos">
+      <h3>Criminosos</h3>
+      <ul class="listagem"></ul>
+    </div>
+    <div class="locais">
+      <h3>Locais</h3>
+      <ul class="listagem"></ul>
+    </div>
+    <div class="armas">
+      <h3>Armas</h3>
+      <ul class="listagem"></ul>
+    </div>
+  </div>
 
-      <section class="about" id="row">
-        <h3>Sobre mim</h3>
-      </section>
+  <div id="game">
+    <a class="play">Iniciar investigação</a>
 
-      <section class="services" id="row"> 
-        <h3>Serviços teste</h3>
-      </section>
+    <div class="options">
+      <p>Quem você acha que cometeu o crime?</p>
+      <input type="text" class="criminoso"/>
 
+      <p>Em local?</p>
+      <input type="text" class="local"/>
+
+      <p>E com que arma?</p>
+      <input type="text" class="arma"/>
+
+      <a class="finish">Terminei a investigação</a>
     </div>
 
-  <script type="text/javascript" src="js/vendor.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+    <div class="result">
+      <h3>Resultado:</h3>
+      <p class="text-result"></p>
+    </div>
+  </div>
+  
 </body>
 
 </html>
