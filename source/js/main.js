@@ -9,6 +9,7 @@ $(function() {
     var objMisterioId, objParse, idUser;
     $(".options").hide();
     $(".result").hide();
+    $(".text-not").hide();
 
     //Listagem de armas, criminosos e locais
     $.when($.ajax("https://handson.eniwine.com.br/api/descubraoassassino/armas"), $.ajax("https://handson.eniwine.com.br/api/descubraoassassino/criminosos"),$.ajax("https://handson.eniwine.com.br/api/descubraoassassino/locais")).done(function(resultA, resultC, resultL) {
@@ -54,8 +55,9 @@ $(function() {
 
         //Verificação das respostas
         if((userCriminoso == "" || userLocal == "" || userArma == "") && (userLocal == "" || userCriminoso == "" || userArma == "") && (userCriminoso == "" || userArma == "" || userLocal == "") && (userLocal == "" || userArma == "" || userCriminoso == "") && (userArma == "" || userLocal == "" || userCriminoso == "") && (userArma == "" || userCriminoso == "" || userLocal == "")){
-            alert("Digite todos os campos corretamente!");
+            $(".text-not").show("slow");
         }else{
+            $(".text-not").hide("slow");
             if(arraySorteio[0] != userCriminoso && arraySorteio[1] != userLocal && arraySorteio[2] != userArma){
                 resultado = "Todos estão incorretos";
             }

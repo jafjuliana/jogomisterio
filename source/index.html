@@ -9,41 +9,46 @@
   <script type="text/javascript" src="../source/js/libs/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="../source/js/main.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <title>Juliana Assalti - Jogo do Mistério</title>
 </head>
 
 <body>
-  <h2 class="title">Jogo do Mistério</h2>
+  <h2 class="title"><i class="fa fa-gamepad" aria-hidden="true"></i> Jogo do Mistério</h2>
 
   <div id="list">
     <div class="criminosos">
-      <h3>Criminosos</h3>
+      <h3><i class="fa fa-users" aria-hidden="true"></i> Criminosos</h3>
       <ul class="listagem"></ul>
     </div>
     <div class="locais">
-      <h3>Locais</h3>
+      <h3><i class="fa fa-map-marker" aria-hidden="true"></i> Locais</h3>
       <ul class="listagem"></ul>
     </div>
     <div class="armas">
-      <h3>Armas</h3>
+      <h3><i class="fa fa-bomb" aria-hidden="true"></i> Armas</h3>
       <ul class="listagem"></ul>
     </div>
   </div>
 
   <div id="game">
-    <a class="play">Iniciar investigação</a>
+    <a class="play"><i class="fa fa-search" aria-hidden="true"></i> Iniciar investigação</a>
 
     <div class="options">
+      <h3>Preencha sua investigação:</h3>
+      <span class="text-min">Preencha com o número correspondente.</span>
+
       <p>Quem você acha que cometeu o crime?</p>
       <input type="text" class="criminoso" maxlength="2"/>
 
-      <p>Em local?</p>
+      <p>Em  qual local?</p>
       <input type="text" class="local" maxlength="2"/>
 
       <p>E com que arma?</p>
       <input type="text" class="arma" maxlength="2"/>
 
-      <a class="finish">Terminei a investigação</a>
+      <a class="finish"><i class="fa fa-check" aria-hidden="true"></i> Terminei a investigação</a>
+      <span class="text-not">Preencha todos os campos corretamente.</span>
     </div>
 
     <div class="result">
