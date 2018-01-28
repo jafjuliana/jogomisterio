@@ -1,5 +1,9 @@
 # Jogo de Investigação
 
+Identificação:
+Juliana de França Assalti
+Programadora Front-End
+
 Tecnologias utilizadas:
 - HTML
 - CSS
